@@ -108,7 +108,7 @@ static class ExpenseManager {
         try {
             PrintWriter pw = new PrintWriter(new FileWriter("expenses.txt"));
             for (Expense e : expenses) {
-                pw.println(e.getAmount() + "," e.getCategory() + "," +  e.getDate());
+                pw.println(e.getAmount() + "," + e.getCategory() + "," +  e.getDate());
             }
             pw.close();
             System.out.println("Expenses saved successfully!");
